@@ -489,11 +489,14 @@ body, html {
     height: 80%; 
     object-fit: contain;
     border-radius: 8px;
+    transition: transform 0.3s; /* Ajout de transition pour une animation fluide */
+
 }
 
 .carousel-item img:hover{
     transform: translateY(-5px);
-    box-shadow: 0 0 25px 10px rgb(106, 13, 173);
+
+    box-shadow: 0 0 0 5px white; /* Bordure blanche espacée simulée par un shadow */
 }
 
 .carousel-item h3 {
