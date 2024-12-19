@@ -1,0 +1,669 @@
+@import url('https://fonts.cdnfonts.com/css/letter-gothic-std-2');
+@import url('https://webfontworld.github.io/recia/ReciaSerifDisplay.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Letter Gothic Std', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+
+
+/* Header*/
+
+
+
+
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding-top: 20px;
+    padding-left: 18px ;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.main-header .menu-burger{
+    
+    position:absolute;
+    top: 30px;
+    left: 25px;
+    width: 25px;
+    z-index: 200;
+}
+
+.logo-header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo{
+    width: 230px;
+}
+
+.navbarG{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #49494975;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+.navbarG a {
+    position: relative;
+    margin-top: 40px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+
+
+
+.navbarD{
+    margin-left: auto;
+    display: flex;
+}
+
+.navbarD a{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+
+.navbarG a:hover, .navbarD a:hover{
+    color: black;
+}
+
+.loupe{
+    width: 15px;
+}
+
+.mobile-menu{
+    margin-left: 0;
+}
+
+
+
+/* Footer*/
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.679);
+    padding: 50px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav a{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+}
+footer .reseau a{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer .reseau .insta{
+    font-size: 250px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 40vh;
+}
+footer a:hover {
+    color:  rgb(160, 160, 160);
+}
+
+
+
+
+/* HOME*/
+
+
+
+
+
+.content .main{
+    width: 100%;
+    height: 140vh;
+    background:url('main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.go-collection {
+    width: 100%;
+    height: 350px;
+    background:url('banniere.png');
+    background-size: cover;
+    background-position: center;
+}
+.go-collection .ecriture-collection{
+    text-decoration: none;
+    font-family: 'ReciaSerifDisplay';
+    font-size: 80px;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    background-color: #0000008a;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagePlusLogo{
+    width: 100%;
+    height: 500px;
+    background:url('banniereLogo.png');
+    background-size: cover;
+    background-position: center;
+}
+.imagePlusLogo .fondBanniere{
+    width: 100%;
+    height: 100%;
+    background-color: #00000089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoBanniere img {
+    width: 500px;
+    height: auto; 
+}
+
+
+/* SHOP*/
+
+
+
+
+.shop .main{
+    width: 100%;
+    height: 50vh;
+    background:url('banniereShop.png');
+    background-size: cover;
+    background-position: center;
+}
+.shop .main .sombre{
+    width: 100%;
+    height: 100%;
+    background-color: #04040432;
+}
+.shop .titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.shop .texte .soon{
+    font-size: 70px;
+    text-align: center;
+}
+.shop .bas{
+    width: 100%;
+    height: 50vh;
+    background:url('banniereBas.png');
+    background-size: cover;
+    background-position: center;
+}
+.shop .bas .sombre{
+    width: 100%;
+    height: 100%;
+    background-color: #00000064;
+}
+
+
+
+
+
+/* COLLECTIONS*/
+
+
+
+
+
+.collections .main{
+    width: 100%;
+    height: 40vh;
+    background:url('banniereCol.png');
+    background-size: cover;
+    background-position: center;
+}
+.collections .titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 50px;
+}
+.collections .collection0{
+    margin-top: 30px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-col{
+    height: 700px;
+    width: 500px;
+}
+.collections .collection0 .nomCol{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+
+
+
+/* COLLECTION 0*/
+
+
+
+.collection-0 .main {
+    width: 100%;
+    height: 50vh;
+    background: url('banniereCol.png') center/cover no-repeat;;
+}
+
+.collection-0 .titre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+}
+.collection-0 .nom-col0 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.collection-0 .collection0-vide {
+    visibility: hidden;
+}
+
+
+.collection-0 .toutesCol {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.collection-0 .toutesCol .collection0 ,
+.collection-0 .toutesCol .collection0-vide,
+.collection-0 .toutesCol .collection0M{
+    flex: 1;
+    margin: 0;
+    padding: 0; 
+}
+
+.collection-0 .img-col0 , .collection-0 .toutesCol .collection0-vide .img-col0{
+    width: 100%;
+}
+
+
+
+.collection-0 .toutesCol .collection0M{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+/* SOUS-COLLECTION 0*/
+
+
+
+.sous-collection0 .main{
+    width: 100%;
+    height: 50vh;
+    background:url('banniereCol.png');
+    background-size: cover;
+    background-position: center;
+}
+.sous-collection0 .titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+}
+
+.toutesCol{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.toutesCol .collection0{
+    padding: 20px;
+    
+}
+
+.nom-Col{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+.toutesCol .collection0-vide {
+    visibility: hidden;
+    padding: 20px;
+    margin: 10px;
+}
+
+.img-Scol{
+    height: 520px;
+    width: 410px;
+}
+
+
+/* ABOUT*/
+
+
+
+
+
+
+
+
+.hr1{
+    width: 60%;
+    background-color: #000000;
+    height: 2px;
+    margin: 40px auto;
+}
+
+.hr{
+    width: 60%;
+    background-color: #000000;
+    height: 2px;
+    margin: 40px auto;
+}
+.about .main{
+    width: 100%;
+    height: 40vh;
+    background:url('banniereAbout.png');
+    background-size: cover;
+    background-position: center;
+}
+.about .titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.about .texte {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+.about .texte .t {
+    
+    text-align: center;
+    font-size: 15px;
+}
+.about .bas{
+    width: 100%;
+    height: 50vh;
+    background:url('banniereBas.png');
+    background-size: cover;
+    background-position: center;
+}
+.about .bas .sombre{
+    width: 100%;
+    height: 100%;
+    background-color: #00000064;
+}
+
+
+
+
+
+
+/* RECHERCHE*/
+
+
+
+
+
+.recherche{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    background-color: #5c5c5c75;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    margin-left: +100%;
+    transition: all 0.5s;
+    flex-direction: column;
+}
+.mobile-recherche {
+    margin-left: 0;
+}
+.cadre-recherche{
+    margin-top: 400px;
+    display: flex;
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid white ;
+}
+.barre-recherche{
+    padding-left: 50px;
+    width: 90%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+}
+.loupe-image{
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent ;
+}
+.loupe2{
+    width: 30px;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+  
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.recherche .suggestion{
+    width: 50%;
+    margin: 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+.tailormade .main{
+    width: 100%;
+    height: 40vh;
+    background:url('banniereAbout.png');
+    background-size: cover;
+    background-position: center;
+}
+.tailormade .titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.tailormade .texte {
+    text-align: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+.tailormade .texte .t1{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tailormade .texte .t{
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+@media screen and  (max-width : 1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .no-scroll{
+        overflow: hidden;
+    }
+    
+
+
+    
+    .navbarG a{
+        margin: 40px;
+    }
+    .main-header .menu-burger{
+        display: block;
+    }
+    .mobile-menu{
+        margin-left: 0;
+    }
+
+
+
+
+    .go-collection{
+        height: 300px;
+    }
+    .go-collection .ecriture-collection{
+        font-size: 60px;
+    }
+    .imagePlusLogo{
+        height: 300px;
+    }
+    .imagePlusLogo .fondBanniere{
+        width: 20;
+    }
+    .logoBanniere img {
+        width: 500px; 
+    }
+
+
+    .collection-0 .titre {
+        
+        font-size: 30px;
+    }
+    .collection-0 .toutesCol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-0 .toutesCol .collection0 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .collection-0 .toutesCol .collection0 .img-col {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .collection-0 .toutesCol .collection0M{
+        width: 80%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .collection-0 .toutesCol .collection0-vide .img-col0{
+        width:0%;
+    }
+
+
+
+
+    .sous-collection0 .toutesCol .collection0-vide .img-Scol{
+        width:0%;
+        height: 0%;
+    }
+
+    .sous-collection0 .toutesCol {
+        flex-direction: column;
+    }
+
+    .sous-collection0 .toutesCol .collection0 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sous-collection0 .toutesCol .collection0 .img-Scol{
+        width: 70%;
+        height: auto;
+    }
+    footer a {
+        margin: 0 20vh;
+    }
+}

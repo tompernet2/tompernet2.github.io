@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Lamine Sow</title>
+</head>
+
+<body>
+
+    <header class="main-header"">
+
+        <img src="burgerN.png" alt="" class="menu-burger">
+        
+        <nav class="navbarG">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="tailormade.html">TAILOR MADE</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+
+        <a href="index.html" class="logo-header"><img src="logo.png" alt="" class="logo"></a>
+
+        <nav class="navbarD">
+            <a href="#" class=""><img src="loupe.png" alt="" class="loupe"></a>
+            <a href="#" ><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+
+    </header>
+
+    
+    <div class="recherche">
+        <div class="cadre-recherche">
+            <input class="barre-recherche"  type="search" id="search" value="" onchange="ouvrirPage()" placeholder="RECHERCHER">
+            <div class="loupe-image">
+                <img src="loupeB.png" alt="" class="loupe2" id="search-icon">
+            </div>
+        </div>
+        <div id="suggestion" class="suggestion"></div>
+    </div>
+    
+    
+    <div class="collections">
+        <div class="main"></div>
+        <h1 class="titre">COLLECTIONS</h1>
+        <div class="collection0">
+            <a href="collection0.html" class="col0"><img src="images/collections/collections.png" alt="" class="img-col"></a>
+            <h1 class="nomCol">COLLECION 0</h1>
+        </div>
+        <h1>&nbsp</h1>            
+        <hr class="hr">
+    </div>
+
+    <footer>
+        <nav>
+            <a href="shop.html">SHOP</a> 
+            <a href="about.html">ABOUT</a> 
+            <a href="#">MY ACCOUNT</a> 
+            <a href="#">CART</a> 
+        </nav>
+        <div class="reseau">
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#""><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+
+</body>
+<script src="code.js"> </script>
+</html>
