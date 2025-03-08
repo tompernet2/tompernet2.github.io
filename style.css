@@ -751,6 +751,9 @@ body, html {
 .lueur.projet5 {
     background-color: #3366ff;
 }
+.lueur.stag1 {
+    background-color: #c5c9c8;
+}
 
 .titreUnProjet {
     font-size: 5vw;
@@ -789,6 +792,9 @@ body, html {
 }
 .technologieUnProjet.java:hover {
     background-color: #5283a2 ;
+}
+.technologieUnProjet.figma:hover {
+    background-color: #a359ff ;
 }
 
 .containerDescriptionsUnProjet{
@@ -878,6 +884,7 @@ body, html {
     width: 50vw;
     min-width: 50vw;
     height: auto;
+    max-height:50vh;
     object-fit: cover;  /* Ajuste l'image sans déformation */
 
     margin: 30px;
