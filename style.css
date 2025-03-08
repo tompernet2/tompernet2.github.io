@@ -705,7 +705,7 @@ body, html {
 
 
 /*//////////////////////////////////////*/
-/*            PROEJET I/II/III/IV       */
+/*            UN PROEJET               */
 /*//////////////////////////////////////*/
 .containerUnProjet{
     font-family: 'neueHelveticaR';
@@ -727,14 +727,29 @@ body, html {
 .lueur {
     position: absolute;
     width: 60%;
-    height: 35%;
+    height: 40%;
     background: rgba(255, 255, 255, 0.2);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: blur(40px);
+    filter: blur(150px);
     border-radius: 200px;
     z-index: -1;
+}
+.lueur.projet1 {
+    background-color: #b7e26e93;
+}
+.lueur.projet2 {
+    background-color: #c2957eb5;
+}
+.lueur.projet3 {
+    background-color: #ff000070;
+}
+.lueur.projet4 {
+    background-color: #3e70d0;
+}
+.lueur.projet5 {
+    background-color: #3366ff;
 }
 
 .titreUnProjet {
@@ -758,6 +773,22 @@ body, html {
     justify-content: center;
     padding-left: 20px;    
     padding-right: 20px;    
+}
+.technologieUnProjet.html:hover {
+    background-color: #e54c21;
+}
+.technologieUnProjet.css:hover {
+    background-color: #0071ba;
+}
+.technologieUnProjet.wordpress:hover {
+    background-color: #32373c;
+}
+.technologieUnProjet.js:hover {
+    background-color: #f7e018;
+    color: black;
+}
+.technologieUnProjet.java:hover {
+    background-color: #5283a2 ;
 }
 
 .containerDescriptionsUnProjet{
@@ -845,7 +876,10 @@ body, html {
 }
 .carouseImagesUnProjet img {
     width: 50vw;
+    min-width: 50vw;
     height: auto;
+    object-fit: cover;  /* Ajuste l'image sans déformation */
+
     margin: 30px;
     border-radius: 15px;
 }
@@ -861,6 +895,31 @@ body, html {
     width: 40px;
     border-radius: 50%;
     margin:0px 20px 30px 20px;
+    background-color: #202020;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.lesBoutonsUnProjet button:hover{
+    background-color: rgb(255, 255, 255);
+    color:#202020 ;
+    cursor: pointer;
+}
+
+.lesBoutonsUnProjet button:disabled {
+    background-color: #5c5c5c; 
+    opacity: 0.5; 
+}
+.lesBoutonsUnProjet button:disabled:hover {
+    background-color: #5c5c5c; 
+    color: #fff;
+    opacity: 0.5;
+    cursor:default;
+
 }
 
 
