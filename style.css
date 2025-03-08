@@ -708,6 +708,8 @@ body, html {
 /*            PROEJET I/II/III/IV       */
 /*//////////////////////////////////////*/
 .containerUnProjet{
+    font-family: 'neueHelveticaR';
+
     width: 100%;
     height: auto;
     margin-bottom: 20vh;
@@ -725,18 +727,20 @@ body, html {
 .lueur {
     position: absolute;
     width: 60%;
-    height: 40%;
+    height: 35%;
     background: rgba(255, 255, 255, 0.2);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: blur(40px);
-    border-radius: 100px;
+    border-radius: 200px;
     z-index: -1;
 }
 
 .titreUnProjet {
     font-size: 5vw;
+    letter-spacing: 5px;
+
 }
 
 .technologiesUnProjet {
@@ -747,7 +751,7 @@ body, html {
     width: auto;
     height: 30px;
     background-color: rgba(167, 167, 167, 0.31);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -757,25 +761,107 @@ body, html {
 }
 
 .containerDescriptionsUnProjet{
-    background-color: red;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.descriptionUnProjet{
-    background-color: blue;
+.descriptionsUnProjet{
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.containerImagesUnProjet{
-    background-color: yellow;
-    width: 100%;
-    height: auto;
+.descriptionsUnProjet h1{
+    margin: 20px;
+    margin-left: 0px;
+    letter-spacing: 5px;
+    font-size: 2.5vw;
+}
+.descriptionsUnProjet h2{
+    margin: 20px;
+    margin-left: 0px;
+    letter-spacing: 5px;
+    font-size: 1.5vw;
 }
 
+.descriptionUnProjet{
+    font-size: 1.5vw;
+    line-height: 130%;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.containerImagesUnProjet{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.containerTopUnProjet{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnVoirUnProjet{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1vw; 
+}
+.btnVoirUnProjet i {
+    margin-left: 10px;
+    font-size: 0.8vw;
+}
+
+.containerBottomUnProjet{
+    width: 100%;
+    height: auto;
+    background-color:#333;
+    border-radius: 20px;
+
+}
+.carouselUnProjet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.carouseImagesUnProjet {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+.carouseImagesUnProjet img {
+    width: 50vw;
+    height: auto;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.lesBoutonsUnProjet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lesBoutonsUnProjet button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin:0px 20px 30px 20px;
+}
 
 
 /*//////////////////////////////////////*/
