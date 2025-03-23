@@ -754,8 +754,11 @@ body, html {
 .lueur.projet5 {
     background-color: #3366ff;
 }
-.lueur.stag1 {
-    background-color: #c5c9c8;
+.lueur.stage1 {
+    background-color: #7b6c5a;
+}
+.lueur.stage2 {
+    background-color: #731641;
 }
 
 .titreUnProjet {
