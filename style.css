@@ -937,6 +937,12 @@ body, html {
 
 }
 
+.btnSymfony{
+    display: flex;
+}
+.btnSymfony a{
+    margin-left: 5px;
+}
 
 /*//////////////////////////////////////*/
 /*            VEILLE                    */
