@@ -215,8 +215,11 @@ canvas {
 }
 
 .projets {
-  background-color: #0A66C2; 
   grid-area: projets;
+  background-image: url('img/frames/frameProjets.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 
