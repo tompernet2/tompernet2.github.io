@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/rond.png">
+    <title>A PROPOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-container">
+        <div class="logo-nom">Tom</div>
+
+        <div class="navbar">
+            <a class="nav " href="index.html">Profil</a>
+            <a class="nav select" href="competence.html">Compétences</a>
+            <a class="nav " href="projet.html">Projets</a> 
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+        
+    </div>
+
+    <div class="container-competence">
+        <div class="top-competence">
+            <div class="container-left">
+                <div class="categorie-competence">
+                    <div class="category-title">Bibliothèque</div>
+                    <div class="menu-item active" data-category="all">Toutes les compétences</div>
+                    <div class="menu-item" data-category="langages">Langages</div>
+                    <div class="menu-item" data-category="frameworks">Frameworks</div>
+                    <div class="menu-item" data-category="tools">Outils</div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="main-content">
+                    <div class="header">
+                        <div class="page-title">Toutes les compétences</div>
+                    </div>
+                    <div class="grid-container" id="skills-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-competence">
+            <div id="selected-skill-info">
+                <img id="selected-skill-image" src="" alt="Skill Image" >
+                Aucune compétence sélectionnée
+            </div>
+
+            <div class="controls">
+                <button id="prev-btn">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button id="play-btn">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="next-btn">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+            
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+<script src="competence.js" ></script>
+</body>
+</html>

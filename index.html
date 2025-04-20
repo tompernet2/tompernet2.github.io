@@ -9,29 +9,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="index">
+<body>
+    <div class="top-container">
+        <div class="logo-nom">Tom</div>
 
-    
-    <div class="containerIndex"> 
+        <div class="navbar">
+            <a class="nav select" href="apropos.html">Profil</a>
+            <a class="nav " href="competence.html">Compétences</a>
+            <a class="nav " href="projet.html">Projets</a> 
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
         
-        <div class="titreLogo">
-            <div class="titreGauche">PORTFOLIO</div>
-            <div class="titreCroix">+</div>
-            <div class="titreDroite">TOM PERNET</div>
+    </div>
+
+    <div class="bottom-container">
+        <div class="card presentation">Présentation</div>
+        <div class="card map">
+            <div id="globe-container">
+                <div id="text-bottom-left">Based in Paris, France</div>
+                <div id="text-top-right"></div>
+            </div>
+        </div>
+        <div class="card parcours">Parcours</div>
+        <div class="card linkedin">
+            <img class="img1" src="img/linkedin.svg" alt="GitHub Logo">
+            <img class="img2" src="img/linkedinText.svg" alt="GitHub Logo">
+
+            <a href="https://github.com/tompernet2" class="btn-lien"><svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="18.256" height="18.256" viewBox="0 0 18.256 18.256" style="transition:.3s"><g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)"><path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581" transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287" transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g><path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path></svg></a>
+        </div>
+        <div class="card github">
+            <img class="img1" src="img/github.svg" alt="GitHub Logo">
+            <img class="img2" src="img/githubText.svg" alt="GitHub Logo">
+
+            <a href="https://github.com/tompernet2" class="btn-lien"><svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="18.256" height="18.256" viewBox="0 0 18.256 18.256" style="transition:.3s"><g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)"><path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581" transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287" transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g><path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path></svg></a>
+        </div>                  
+        <div class="card projets">
+            <a href="#" class="btn-lien text">Projets<svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="18.256" height="18.256" viewBox="0 0 18.256 18.256" style="transition:.3s"><g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)"><path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581" transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287" transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g><path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path></svg></a>
+        </div>
+        <div class="card competences">
+            <a href="#" class="btn-lien text">Compétences<svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="18.256" height="18.256" viewBox="0 0 18.256 18.256" style="transition:.3s"><g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)"><path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581" transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287" transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></g><path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path></svg></a>
         </div>
     </div>
-    
-    <nav class="navbar">
-        <a href="index.html" class="accueilIcon" data-title="Accueil"><i class="fa-solid fa-house"></i></a> <!-- Accueil -->
-        <a href="apropos.html" class="aproposIcon" data-title="À propos"><i class="fa-solid fa-user"></i></a> <!-- A propos -->
-        <a href="projets.html" class="projetIcon" data-title="Projets"><i class="fa-solid fa-folder"></i></a> <!-- Projets -->
-        <a href="certifications.html" class="certifIcon" data-title="Certifications"><i class="fa-solid fa-bookmark"></i></a> <!-- Certifications -->
 
-        <a href="competences.html" class="competenceIcon" data-title="Compétences"><i class="fa-solid fa-display"></i></a> <!-- Compétences -->
-        <a href="veille.html" class="veilleIcon" data-title="Veille"><i class="fa-solid fa-server"></i></a> <!-- Veille -->
-        <a href="stages.html" class="stageIcon" data-title="Stages"><i class="fa-regular fa-clipboard"></i></a> <!-- Stages -->
-        <a href="mailto:tom.pernet2@gmail.com" class="contactIcon" data-title="Contact"><i class="fa-solid fa-envelope"></i></a> <!-- Contact -->
-    </nav>
+    
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+            "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+        }
+        }
+    </script>
+    <script type="module" src="map.js"></script>
 
 </body>
 </html>
