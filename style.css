@@ -14,7 +14,7 @@
 
 body {
   font-family: 'silkaMedium';
-  background-color: #F2F7FC;
+  background-color: #E2EDF7;
   color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ body {
   width: auto;
   height: auto;
   border-radius: 23px;
-  background-color: #E2EDF7;
+  background-color: #CBE0F2;
   display: flex;
   font-size: 14px;
   padding: 5px;
@@ -166,17 +166,17 @@ body {
 }
 
 #text-bottom-left {
-position: absolute;
-bottom: 10px;
-left: 10px;
-color: rgb(255, 255, 255);
-font-size: 20px;
-font-weight: bold;
-z-index: 10;
-line-height: 1.4;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 10;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #text-top-right {
@@ -208,9 +208,57 @@ canvas {
 }
 
 .parcours {
-  
   grid-area: parcours;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+.background-img {
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+}
+
+.containerParours {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.etapeParcours {
+  color: white;
+  background-color: #4B7DC5;
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;     /* Aligne les éléments à gauche */
+  justify-content: flex-start; /* Commence en haut */
+  flex-direction: column;      /* Empile verticalement */
+  padding: 15px;               /* Ajouter un peu d'espace interne */
+  font-size: 12px;
+  border-radius: 10px;
+}
+.etapeParcours div {
+  width: 100%;
+  text-align: left;            /* Aligne le texte à gauche */
+}
+.anneeParcours{
+  font-size:20px ;
+  margin-bottom: 5px;
+}
+.lieuParcours{
+  margin-top:5px ;
+}
+
 
 .competences {
   grid-area: competences;
@@ -313,6 +361,18 @@ canvas {
   .btn-lien.text{
     padding-left: 10px;
   }
+
+  .containerParours {
+    gap: 60px;
+  }
+  .etapeParcours {
+    padding: 10px;            
+    font-size: 8px;
+  }
+  .anneeParcours{
+    font-size:15px ;
+  }
+  
 }
 
 @media screen and (max-width: 830px) {
@@ -348,6 +408,20 @@ canvas {
   .linkedin  .img2 {
     display: none;
   }
+
+  .containerParours {
+    gap: 20px;
+  }
+  .etapeParcours {
+    padding: 10px;            
+    font-size: 8px;
+  }
+  .anneeParcours{
+    font-size:10px ;
+  }
+  .lieuParcours{
+    margin-top:0px ;
+  }
 }
 @media screen and (max-width: 400px) {
   .bottom-container {
@@ -358,6 +432,18 @@ canvas {
   }
   #text-bottom-left {
     font-size: 10px;
+  }
+
+  .containerParours {
+    gap: 10px;
+  }
+  .etapeParcours {
+    padding: 8px;            
+    font-size: 7px;
+  }
+  .anneeParcours{
+    font-size:9px ;
+    margin-bottom: 0px;
   }
 }
 
