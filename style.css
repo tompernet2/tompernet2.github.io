@@ -262,8 +262,10 @@ canvas {
 
 .competences {
   grid-area: competences;
-  background-color: #0A66C2; 
-}
+  background-image: url('img/frames/frameCompetence.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; }
 
 .projets {
   grid-area: projets;
