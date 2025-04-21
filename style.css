@@ -882,7 +882,7 @@ canvas {
 }
 
 @media (max-width: 830px) {
-  .container-projets {
+  /* .container-projets {
     width: 375px;
   }
 
@@ -898,6 +898,36 @@ canvas {
     width: 300px;
     height: 500px;
   }
+  .nav-button {
+    margin: 10px;
+  } */
+  .container-projets {
+    width: 375px;
+  }
+
+  .carousel-container {
+    position: relative;
+    touch-action: pan-x; /* Autorise uniquement le défilement horizontal */
+  }
+
+  .carousel {
+    -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
+    display: flex;
+    touch-action: pan-x; /* Autorise uniquement le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Snap aux éléments */
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none; /* Cache la barre de défilement sur Chrome/Safari */
+  }
+
+  .projet-card {
+    width: 300px;
+    height: 500px;
+    flex-shrink: 0; /* Empêche les cartes de se rétrécir */
+    scroll-snap-align: start; /* Aligne les cartes lors du défilement */
+  }
+
   .nav-button {
     margin: 10px;
   }
