@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentIndex = 0;
   
     const cardWidth = cards[0].offsetWidth + 20;
-    const maxIndex = cards.length - Math.floor(document.querySelector('.carousel-container').offsetWidth / cardWidth);
+    const maxIndex = cards.length - Math.floor(document.querySelector('.carousel-container').offsetWidth / cardWidth)+1;
   
     const updateCarousel = () => {
       carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;

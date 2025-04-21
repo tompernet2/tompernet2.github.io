@@ -451,7 +451,6 @@ canvas {
 /*----------------------------------------------*/
 /*                  COMPETENCE                  */
 /*----------------------------------------------*/
-
 .container-competence{
   width: 1000px;
   height: auto;
@@ -749,6 +748,7 @@ canvas {
 .carousel-container {
   width: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 .btn-navigation {
   width: 100%;
