@@ -10,6 +10,12 @@ const skills = {
     tools: [
       { name: "Git", category: "tools", image: "img/logo.png" },
       { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
+      { name: "Docker", category: "tools", image: "img/logo.png" },
     ]
   };
   
@@ -30,9 +36,13 @@ const skills = {
       const card = document.createElement('div');
       card.className = 'skill-card';
       card.innerHTML = `
+        <div class="indexCompetence">${index + 1}</div>
         <img src="${skill.image}" alt="${skill.name}">
-        <div class="nomCompetence">${skill.name}</div>
-        <div class="catogoryCompetence">${skill.category}</div>
+        
+        <div class="textCompetence">
+          <div class="nomCompetence">${skill.name}</div>
+          <div class="catogoryCompetence">${skill.category}</div>
+        </div>
       `;
       
       card.addEventListener('click', () => {
@@ -57,8 +67,8 @@ const skills = {
     infoDiv.innerHTML = `
     <img id="selected-skill-image" src="${skill.image}" alt="${skill.name}">
     <div class="info-barre">
-        <div>${skill.name}</div>
-        <div>${skill.category}</div>    
+        <div class="barreNom">${skill.name}</div>
+        <div class="barreCategorie">${skill.category}</div>    
     </div>
     `;
   }

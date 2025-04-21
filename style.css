@@ -453,28 +453,31 @@ canvas {
 /*----------------------------------------------*/
 
 .container-competence{
-  width: 1200px;
+  width: 1000px;
   height: auto;
-  background-color: #ffffff;
   margin-bottom: 20vh;
-  border-radius: 15px;
   overflow: hidden;
+  border-radius: 15px;
 }
 .top-competence{
   width: 100%;
   display: flex;
+  gap: 10px;
 }
 .container-left{
+  background-color: white;
+  border-radius: 15px;
   width: 30%;
   height: 100%;
   padding: 0px;
 }
 .container-right{
-  background-color: #999999;
+  background-color: white;
+  border-radius: 15px;
   width: 70%;
   height: 100%;
   min-height: 300px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .category-title{
@@ -484,52 +487,66 @@ canvas {
 .menu-item{
   border-radius: 10px;
   padding: 20px 10px;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 
 .menu-item:hover {
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  background-color: rgb(186, 186, 186);
+  color: black;
+  background-color:#F2F7FC;
 
 }
 .menu-item.active {
-  background-color: rgb(130, 130, 130);
-  color: rgb(255, 255, 255);
+  background-color: #CBE0F2;
+  color: black;
 }
 
 #skills-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
 }
 
 .skill-card {
-  background-color: white;
   display: flex;
-  flex-direction: column;
-  width: 150px;
+  align-items: center;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   overflow: hidden;
-  padding: 10px;
+}
+.skill-card:hover {
+  background-color: #CBE0F2;
 }
 
 .skill-card img {
-  background-color: #F5F5F7;
-  padding: 20px;
-  width: 110px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px;
+  width: 40px;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  margin-bottom: 5px;
 }
 
+.indexCompetence{
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 15px;
+  width: 10px;
+  height: auto;
+  color: #797979;
+
+}
 .catogoryCompetence{
   color: #797979;
   font-size: 14px;
+}
+
+.textCompetence{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
 }
 .nomCompetence{
   color: #000000;
@@ -549,7 +566,7 @@ canvas {
   left: 50%;
   transform: translateX(-50%);
   height: 90px;
-  background-color: #08ab1384;
+  background-color: #A8CCE8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -562,7 +579,7 @@ canvas {
 
 
 #selected-skill-info{
-  width: 33%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -579,13 +596,22 @@ canvas {
   object-fit: cover;
   background-color: white;
 }
+.barreNom{
+  color: black;
+  font-size: 18px;
+}
+.barreCategorie{
+  color: #797979;
+  font-size: 13px;
+
+}
 
 .controls{
-  width: 34%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .controls button {
@@ -595,21 +621,6 @@ canvas {
   margin: 0 20px;
   cursor: pointer;
   font-size: 40px;
-}
-
-
-
-.burger{
-  width: 33%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  font-size: 40px;
-}
-.burger i{
-  margin: 10px;
-  padding: 10px;
 }
 
 @media (max-width: 1230px) {
@@ -656,10 +667,11 @@ canvas {
     width: 100%;
     padding: 0px;
     padding-bottom: 20px;
+    border-radius: 15px;
   }
 
   .bottom-competence {
-    width: 400px;
+    width: 375px;
   }
 
   #skills-grid {
@@ -672,8 +684,52 @@ canvas {
     justify-content: center;
     align-items: center;
   }
-  .info-barre {
-    display: none;
+
+  .controls button {
+    font-size: 30px;
+    margin: 0 15px;
+
+  }
+  .barreNom{
+    color: black;
+    font-size: 15px;
+  }
+  .barreCategorie{
+    color: #797979;
+    font-size: 10px;
+  
+  }
+}
+@media (max-width: 400px) {
+  .container-competence {
+    width: 275px;
+  }
+  .bottom-competence {
+    width: 275px;
+  }
+  .controls button {
+    font-size: 20px;
+    margin: 0 10px;
+
+  }
+  #selected-skill-info{
+    width: 60%;
+  
+  }
+  .controls{
+    width: 40%;
+  }
+  .barreNom{
+    font-size: 13px;
+  }
+  .barreCategorie{
+    font-size: 10px;
+  }
+  #selected-skill-info img{
+    margin: 10px;
+    padding: 10px;
+    width: 40px;
+    height: auto;
   }
 }
 
