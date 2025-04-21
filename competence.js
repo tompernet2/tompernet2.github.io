@@ -17,9 +17,9 @@ const skills = {
   ],
   bibliotheques: [
     { name: "excel4node", category: "Bibliothèques", image: "img/logo/npm.png" },
-    { name: "moment.js", category: "Bibliothèques", image: "img/logo/npm.png" },
-    { name: "underscore.js", category: "Bibliothèques", image: "img/logo/npm.png" },
-    { name: "wkhtmltopdf.js", category: "Bibliothèques", image: "img/logo/npm.png" }
+    { name: "moment", category: "Bibliothèques", image: "img/logo/npm.png" },
+    { name: "underscore", category: "Bibliothèques", image: "img/logo/npm.png" },
+    { name: "wkhtmltopdf", category: "Bibliothèques", image: "img/logo/npm.png" }
   ],
   tools: [
     { name: "Git", category: "Outils", image: "img/logo/git.png" },
