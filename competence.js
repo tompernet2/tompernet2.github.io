@@ -1,25 +1,36 @@
 const skills = {
-    langages: [
-      { name: "JavaScript", category: "langages", image: "img/logo.png" },
-      { name: "Python", category: "langages", image: "img/logo.png" },
-    ],
-    frameworks: [
-      { name: "React", category: "frameworks", image: "img/logo.png" },
-      { name: "Vue.js", category: "frameworks", image: "img/logo.png" },
-    ],
-    tools: [
-      { name: "Git", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-      { name: "Docker", category: "tools", image: "img/logo.png" },
-    ]
-  };
+  langages: [
+    { name: "HTML", category: "Langages", image: "img/logo/html.png" },
+    { name: "CSS", category: "Langages", image: "img/logo/css.png" },
+    { name: "JavaScript", category: "Langages", image: "img/logo/js.png" },
+    { name: "PHP", category: "Langages", image: "img/logo/php.png" },
+    { name: "Java", category: "Langages", image: "img/logo/java.png" },
+    { name: "C++", category: "Langages", image: "img/logo/c++.png" },
+    { name: "Python", category: "Langages", image: "img/logo/python.png" }
+  ],
+  frameworks: [
+    { name: "Node.js", category: "Frameworks", image: "img/logo/node.png" },
+    { name: "Vue.js", category: "Frameworks", image: "img/logo/vue.png" },
+    { name: "Symfony", category: "Frameworks", image: "img/logo/symfony.png" },
+    { name: "JavaFX", category: "Frameworks", image: "img/logo/javafx.png" },
+    { name: "WordPress", category: "Frameworks", image: "img/logo/wordpress.png" }
+  ],
+  bibliotheques: [
+    { name: "excel4node", category: "Bibliothèques", image: "img/logo/npm.png" },
+    { name: "moment.js", category: "Bibliothèques", image: "img/logo/npm.png" },
+    { name: "underscore.js", category: "Bibliothèques", image: "img/logo/npm.png" },
+    { name: "wkhtmltopdf.js", category: "Bibliothèques", image: "img/logo/npm.png" }
+  ],
+  tools: [
+    { name: "Git", category: "Outils", image: "img/logo/git.png" },
+    { name: "GitHub", category: "Outils", image: "img/logo/github.png" },
+    { name: "Figma", category: "Outils", image: "img/logo/figma.png" },
+    { name: "NPM", category: "Outils", image: "img/logo/npm.png" },
+    { name: "Scene Builder", category: "Outils", image: "img/logo/scenebuilder.png" },
+  ]
+};
   
-  let currentSkillList = [...skills.langages, ...skills.frameworks, ...skills.tools];
+  let currentSkillList = [...skills.langages, ...skills.frameworks, ...skills.tools, ...skills.bibliotheques];
   let currentSkillIndex = 0;
   
   function displaySkills(category = "all") {
@@ -27,7 +38,7 @@ const skills = {
     grid.innerHTML = '';
   
     if (category === "all") {
-      currentSkillList = [...skills.langages, ...skills.frameworks, ...skills.tools];
+      currentSkillList = [...skills.langages, ...skills.frameworks, ...skills.tools, ...skills.bibliotheques];
     } else {
       currentSkillList = skills[category] || [];
     }

@@ -517,6 +517,7 @@ canvas {
 }
 .skill-card:hover {
   background-color: #CBE0F2;
+  cursor: pointer;
 }
 
 .skill-card img {
@@ -524,8 +525,8 @@ canvas {
   padding: 10px;
   margin: 10px;
   width: 40px;
-  height: auto;
-  object-fit: cover;
+  height: 40px; /* Hauteur fixe au lieu de auto */
+  object-fit: contain; /* "contain" au lieu de "fill" */
   border-radius: 5px;
 }
 
@@ -586,14 +587,13 @@ canvas {
   justify-content: start;
 
 }
-#selected-skill-info img{
+#selected-skill-info img {
   margin: 10px;
   padding: 10px;
   width: 50px;
-  height: auto;
-  aspect-ratio: 1/1;
+  height: 50px; /* Hauteur fixe au lieu de auto */
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain; /* "contain" au lieu de "cover" */
   background-color: white;
 }
 .barreNom{
