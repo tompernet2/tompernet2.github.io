@@ -758,7 +758,7 @@ canvas {
 }
 
 .nav-button {
-  background-color: #ECECF0;
+  background-color: #ffffff;
   color: #555557;
   width: 36px;
   height: 36px;
@@ -771,7 +771,7 @@ canvas {
 }
 
 .nav-button:active {
-  background-color: #828282; 
+  background-color: #d0d0d0; 
 }
 
 .arrow {
@@ -886,6 +886,15 @@ canvas {
     width: 375px;
   }
 
+  /* .carousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  } */
+   
   .projet-card {
     width: 300px;
     height: 500px;
