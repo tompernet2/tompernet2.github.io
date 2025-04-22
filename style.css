@@ -522,6 +522,36 @@ canvas {
     font-size:9px ;
     margin-bottom: 0px;
   }
+  .memoji img {
+    width: 80px;
+  }
+  .presentationText{
+    line-height: 1.5; 
+
+  }
+  .top-presentation{
+    height: 40%;
+  }
+  .bottom-presentation{
+    height: 60%;
+  }
+  .btn-cv {
+    height: 40px;
+    width: auto;
+    border-radius: 36px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 6px;
+    box-shadow: 0 0 0 2px rgba(200, 200, 200, 0.5);
+  }
 }
 
 
