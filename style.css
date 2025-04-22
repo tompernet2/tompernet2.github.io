@@ -140,11 +140,77 @@ body {
   border-radius: 30px;
   text-align: center;
   position: relative; 
+  overflow: hidden;
 
 }
 
 .presentation {
   grid-area: presentation;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.top-presentation{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-presentation{
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  font-size: 15px;
+}
+.presentationText{
+  padding: 0px 40px 40px 40px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.nomPresentation{
+  font-size: 40px;
+  font-family: 'morangaBold';
+  vertical-align: baseline; 
+  line-height: 1; 
+
+}
+.memoji{
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+}
+.memoji img {
+  width: 90px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+
+.btn-cv {
+  height: 40px;
+  width: auto;
+  border-radius: 36px;
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  font-size: 14px;
+  gap: 6px;
+  box-shadow: 0 0 0 2px rgba(200, 200, 200, 0.5);
+}
+
+.btn-cv:hover {
+  box-shadow: 0 0 0 5px rgba(200, 200, 200, 0.5);
 }
 
 .map {
@@ -160,9 +226,9 @@ body {
   overflow: hidden;
   border-radius: 30px;
   background: radial-gradient(ellipse at center, #0b0e2c 0%, #020412 100%);
-  display: flex; /* Ajout */
-  justify-content: center; /* Ajout */
-  align-items: center; /* Ajout */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 #text-bottom-left {
@@ -240,16 +306,16 @@ canvas {
   width: 70%;
   height: auto;
   display: flex;
-  align-items: flex-start;     /* Aligne les éléments à gauche */
-  justify-content: flex-start; /* Commence en haut */
-  flex-direction: column;      /* Empile verticalement */
-  padding: 15px;               /* Ajouter un peu d'espace interne */
+  align-items: flex-start;     
+  justify-content: flex-start; 
+  flex-direction: column;    
+  padding: 15px;               
   font-size: 12px;
   border-radius: 10px;
 }
 .etapeParcours div {
   width: 100%;
-  text-align: left;            /* Aligne le texte à gauche */
+  text-align: left;         
 }
 .anneeParcours{
   font-size:20px ;
@@ -329,7 +395,7 @@ canvas {
   }
   
   .btn-lien:hover {
-    box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.5);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.558);
   }
 
 @media screen and (max-width: 1230px) {
@@ -374,6 +440,15 @@ canvas {
   .anneeParcours{
     font-size:15px ;
   }
+
+  .presentationText{
+    line-height: 2; 
+
+  }
+  .memoji img {
+    width: 110px;
+  }
+  
   
 }
 
@@ -526,8 +601,8 @@ canvas {
   padding: 10px;
   margin: 10px;
   width: 40px;
-  height: 40px; /* Hauteur fixe au lieu de auto */
-  object-fit: contain; /* "contain" au lieu de "fill" */
+  height: 40px; 
+  object-fit: contain; 
   border-radius: 5px;
 }
 
@@ -592,10 +667,10 @@ canvas {
   margin: 10px;
   padding: 10px;
   width: 50px;
-  height: 50px; /* Hauteur fixe au lieu de auto */
+  height: 50px; 
   aspect-ratio: 1/1;
   border-radius: 5px;
-  object-fit: contain; /* "contain" au lieu de "cover" */
+  object-fit: contain; 
   background-color: white;
 }
 .barreNom{
@@ -887,16 +962,6 @@ canvas {
   .container-projets {
     width: 500px;
   }
-
-  /* .carousel {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .carousel::-webkit-scrollbar {
-    display: none;
-  } */
-   
   .projet-card {
     height: 500px;
     aspect-ratio: 7 / 12;
@@ -1007,7 +1072,6 @@ canvas {
   margin-top: 5px;
 }
 
-/* Description et boutons */
 .description-container {
   background-color: #F5F5F7;
   border-radius: 30px;
