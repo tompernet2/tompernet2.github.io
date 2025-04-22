@@ -1107,20 +1107,29 @@ canvas {
   background-color: #e0e0e0;
 }
 
+.overlay-links {
+  display: flex;
+}
 .overlay-links a {
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
   text-decoration: none;
-  color: white;
-  background-color: #0071e3; 
-  padding: 10px 20px;
-  border-radius: 15px;
+  color: black;
+  padding: 0 10px;
   font-size: 14px;
-  font-weight: 500;
-  margin-left: 10px;
-  transition: background 0.3s ease;
+  gap: 6px;
+  box-shadow: 0 0 0 2px rgba(200, 200, 200, 0.5);
 }
 
 .overlay-links a:hover {
-  background-color: #005bb5;
+  box-shadow: 0 0 0 5px rgba(200, 200, 200, 0.5);
 }
 
 .description-btns .description {
@@ -1129,6 +1138,10 @@ canvas {
   max-width: 100%;
   margin-top: 50px;
 }
+.description p {
+  margin-bottom: 20px;
+}
+
 
 .overlay-images {
   display: flex;
@@ -1144,6 +1157,8 @@ canvas {
   height: auto;
   object-fit: cover;
   border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ombre douce */
+
 }
 
 
@@ -1167,18 +1182,8 @@ canvas {
 
   .overlay-techs .badge {
     padding: 4px 10px;
+    margin: 10px;
     font-size: 11px;
-  }
-
-  .overlay-links {
-    display: flex;
-    gap: 6px;
-  }
-
-  .overlay-links a {
-    padding: 6px 12px;
-    font-size: 12px;
-    white-space: nowrap;
   }
 }
 
@@ -1207,9 +1212,13 @@ canvas {
     width: 100%;  
   }
 
+  .overlay-links {
+    display: flex;
+    gap: 6px;
+  }
+
   .overlay-links a {
     margin-left: 0;
-    margin-right: 10px;
   }
 }
 
