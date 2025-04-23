@@ -174,7 +174,6 @@ body {
   font-family: 'morangaBold';
   vertical-align: baseline; 
   line-height: 1; 
-
 }
 .memoji{
   width: auto;
@@ -499,10 +498,16 @@ canvas {
   .lieuParcours{
     margin-top:0px ;
   }
+  .top-presentation{
+    height: 40%;
+  }
+  .bottom-presentation{
+    height: 60%;
+  }
 }
 @media screen and (max-width: 400px) {
   .bottom-container {
-      width: 300px;
+      width: 350px;
   }
   .btn-lien.text {
     padding: 0px 0px 0px 4px;
@@ -527,7 +532,9 @@ canvas {
   }
   .presentationText{
     line-height: 1.5; 
-
+  }
+  .nomPresentation{
+    font-size: 40px;
   }
   .top-presentation{
     height: 40%;
@@ -759,8 +766,11 @@ canvas {
   .container-left{
     width: 100%;
     padding: 0px;
+    border-radius: 30px;
+
   }
 
+  
   .categorie-competence{
     margin: 0px;
   }
@@ -774,11 +784,11 @@ canvas {
     width: 100%;
     padding: 0px;
     padding-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
   }
 
   .bottom-competence {
-    width: 375px;
+    width: 80vw;
   }
 
   #skills-grid {
@@ -809,10 +819,10 @@ canvas {
 }
 @media (max-width: 400px) {
   .container-competence {
-    width: 275px;
+    width: 350px;
   }
   .bottom-competence {
-    width: 275px;
+    width: 95vw;
   }
   .controls button {
     font-size: 20px;
