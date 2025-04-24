@@ -740,6 +740,8 @@ canvas {
   margin: 0 20px;
   cursor: pointer;
   font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 @media (max-width: 1230px) {
