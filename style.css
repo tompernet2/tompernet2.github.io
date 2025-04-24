@@ -173,6 +173,7 @@ body {
   padding: 0px 40px 40px 40px;
   height: 100%;
   box-sizing: border-box;
+  text-align: justify;
 }
 .nomPresentation{
   font-size: 40px;
@@ -1187,6 +1188,7 @@ canvas {
 }
 .description p {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 
